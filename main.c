@@ -46,11 +46,14 @@ int main()
             }
         }
         realizaJogada(matriz, posicao, 'X');
-        if(verificaFim(matriz))
+        if(verificaFim(matriz)){
+            system("clear");
+            exibe(matriz);
             break;
+        }
         system("clear");
         exibe(matriz);
-        printf("Em que posição deseja jogar O, %s\n", jogador2);
+        printf("Em que posição deseja jogar O, %s?\n", jogador2);
         scanf("%d", &posicao);
         if(verificaPosicao(matriz, posicao) != 1){
             while(verificaPosicao(matriz, posicao) != 1){
@@ -72,7 +75,7 @@ int linha1(char matriz[3][3])
 
 int linha2(char matriz[3][3])
 {
-    if(matriz[1][0] == matriz[0][1] && matriz[1][0] == matriz[1][2])
+    if(matriz[1][0] == matriz[1][1] && matriz[1][0] == matriz[1][2])
         return 1;
     return 0;
 }
@@ -115,6 +118,20 @@ int diagonalPrimaria(char matriz[3][3])
 int diagonalSecundaria(char matriz[3][3])
 {
     if(matriz[0][2] == matriz[1][1] && matriz[0][2] == matriz[2][0])
+        return 1;
+    return 0;
+}
+
+int verificaEmpate(char matriz[3][3])
+{
+    int i, j, k = 0;
+    for(i = 0; i < 3; i++){
+        for(j = 0; j < 3; j++){
+            if(matriz[i][j] == 'X' || matriz[i][j] == 'O')
+                k++;
+        }
+    }
+    if(k == 9)
         return 1;
     return 0;
 }
