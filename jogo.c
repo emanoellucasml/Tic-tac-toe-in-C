@@ -1,63 +1,63 @@
 #include "jogo.h"
 #include <time.h>
 
-int linha1(char matriz[3][3])
+int linha1(char matriz[][3])
 {
     if(matriz[0][0] == matriz[0][1] && matriz[0][0] == matriz[0][2])
         return 1;
     return 0;
 }
 
-int linha2(char matriz[3][3])
+int linha2(char matriz[][3])
 {
     if(matriz[1][0] == matriz[1][1] && matriz[1][0] == matriz[1][2])
         return 1;
     return 0;
 }
 
-int linha3(char matriz[3][3])
+int linha3(char matriz[][3])
 {
     if(matriz[2][0] == matriz[2][1] && matriz[2][0] == matriz[0][2])
         return 1;
     return 0;
 }
 
-int coluna1(char matriz[3][3])
+int coluna1(char matriz[][3])
 {
     if(matriz[0][0] == matriz[0][1] && matriz[0][0] == matriz[0][2])
         return 1;
     return 0;
 }
 
-int coluna2(char matriz[3][3])
+int coluna2(char matriz[][3])
 {
     if(matriz[1][0] == matriz[0][1] && matriz[1][0] == matriz[0][2])
         return 1;
     return 0;
 }
 
-int coluna3(char matriz[3][3])
+int coluna3(char matriz[][3])
 {
     if(matriz[2][0] == matriz[2][1] && matriz[2][0] == matriz[2][2])
         return 1;
     return 0;
 }
 
-int diagonalPrimaria(char matriz[3][3])
+int diagonalPrimaria(char matriz[][3])
 {
     if(matriz[0][0] == matriz[1][1] && matriz[0][0] == matriz[2][2])
         return 1;
     return 0;
 }
 
-int diagonalSecundaria(char matriz[3][3])
+int diagonalSecundaria(char matriz[][3])
 {
     if(matriz[0][2] == matriz[1][1] && matriz[0][2] == matriz[2][0])
         return 1;
     return 0;
 }
 
-int verificaEmpate(char matriz[3][3])
+int verificaEmpate(char matriz[][3])
 {
     int i, j, k = 0;
     for(i = 0; i < 3; i++){
@@ -73,13 +73,13 @@ int verificaEmpate(char matriz[3][3])
     }
 }
 
-int verificaFim(char matriz[3][3])
+int verificaFim(char matriz[][3])
 {
     if(linha1(matriz) || linha2(matriz) || linha3(matriz) || coluna1(matriz) || coluna2(matriz) || coluna3(matriz) || diagonalPrimaria(matriz) || diagonalSecundaria(matriz))
         return 1;
 }
 
-void preenche(char matriz[3][3])
+void preenche(char matriz[][3])
 {
     int i, j, k = 1;
     for(i = 0; i < 3; i++){
@@ -89,7 +89,7 @@ void preenche(char matriz[3][3])
     }
 }
 
-void exibe(char matriz[3][3])
+void exibe(char matriz[][3])
 {
     int i, j;
     for(i = 0; i < 3; i++){
@@ -140,7 +140,7 @@ void pause(float delay1)
    return;
 }
 
-int verificaPosicao(char matriz[3][3], int posicao)
+int verificaPosicao(char matriz[][3], int posicao)
 {
     //retorna -1 caso o usuário digite uma posicao inválida ou 0 caso a posição esteja ocupada. Retorna 1 caso seja uma posição válida e livre.
     switch(posicao){
