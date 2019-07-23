@@ -27,6 +27,7 @@ int main()
     setbuf(stdin, NULL);
     loading();
     do{
+        system("clear");
         exibe(matriz);
         printf("Em que posição deseja jogar o X, %s?\n", jogador1);
         scanf("%d", &posicao);
@@ -37,13 +38,59 @@ int main()
             }
         }
         realizaJogada(matriz, posicao, 'X');
-    }while(linha1(matriz) != 1);
+        system("clear");
+        exibe(matriz);
+        printf("Em que posição deseja jogar O, %s\n", jogador2);
+        scanf("%d", &posicao);
+        if(verificaPosicao(matriz, posicao) != 1){
+            while(verificaPosicao(matriz, posicao) != 1){
+                printf("Digite uma posicao válida: ");
+                scanf("%d", &posicao);
+            }
+        }
+        realizaJogada(matriz, posicao, 'O');
+    }while(fim(matriz) != 1);
     return 0;
 }
 
 int linha1(char matriz[3][3])
 {
     if(matriz[0][0] == matriz[0][1] && matriz[0][0] == matriz[0][2])
+        return 1;
+    return 0;
+}
+
+int linha2(char matriz[3][3])
+{
+    if(matriz[1][0] == matriz[0][1] && matriz[1][0] == matriz[1][2])
+        return 1;
+    return 0;
+}
+
+int linha3(char matriz[3][3])
+{
+    if(matriz[2][0] == matriz[2][1] && matriz[2][0] == matriz[0][2])
+        return 1;
+    return 0;
+}
+
+int coluna1(char matriz[3][3])
+{
+    if(matriz[0][0] == matriz[0][1] && matriz[0][0] == matriz[0][2])
+        return 1;
+    return 0;
+}
+
+int coluna2(char matriz[3][3])
+{
+    if(matriz[1][0] == matriz[0][1] && matriz[1][0] == matriz[0][2])
+        return 1;
+    return 0;
+}
+
+int coluna3(char matriz[3][3])
+{
+    if(matriz[2][0] == matriz[2][1] && matriz[2][0] == matriz[2][2])
         return 1;
     return 0;
 }
