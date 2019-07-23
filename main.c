@@ -8,15 +8,15 @@ void exibe(char matriz[3][3]);
 void preenche(char matriz[3][3]);
 char intToChar(int algarismo);
 void loading();
-int linha1(char matriz[3][3]);;
+int linha1(char matriz[3][3]);
 
 int main()
 {
 
     char matriz[3][3];
     char jogador1[30], jogador2[30];
+    int posicao;
     preenche(matriz);
-
     printf("Nome do jogador 1: ");
     scanf("%s", &jogador1);
     setbuf(stdin, NULL);
@@ -24,8 +24,11 @@ int main()
     scanf("%s", &jogador2);
     setbuf(stdin, NULL);
     loading();
-
-    exibe(matriz);
+    do{
+        exibe(matriz);
+        printf("Em que posição deseja jogar, %s?\n", jogador1);
+        scanf("%d", &posicao);
+    }while(linha1(matriz));
     return 0;
 }
 
@@ -98,8 +101,10 @@ void pause(float delay1)
 
 }
 
-
-
+int linha1(char matriz[3][3])
+{
+    return 1;
+}
 
 
 
