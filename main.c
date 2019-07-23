@@ -8,7 +8,7 @@ void exibe(char matriz[3][3]);
 void preenche(char matriz[3][3]);
 char intToChar(int algarismo);
 void loading();
-void realizaJogada(char matriz[][], int, char);
+void realizaJogada(char matriz[3][3], int, char);
 int verificaPosicao(char matriz[3][3], int);
 int linha1(char matriz[3][3]);
 
@@ -30,13 +30,13 @@ int main()
         exibe(matriz);
         printf("Em que posição deseja jogar o X, %s?\n", jogador1);
         scanf("%d", &posicao);
-        if(verificaPosicao(posicao) != 1){
-            while(verificaPosicao(posicao) != ){
+        if(verificaPosicao(matriz, posicao) != 1){
+            while(verificaPosicao(matriz, posicao) != 1){
                 printf("Digite uma posicao valida: ");
-                scanf("%d, " &posicao);
+                scanf("%d", &posicao);
             }
         }
-        realizaJogada(matriz[3][3], posicao, 'X');
+        realizaJogada(matriz, posicao, 'X');
     }while(linha1(matriz) != 1);
     return 0;
 }
@@ -202,6 +202,7 @@ void realizaJogada(char matriz[3][3], int posicao, char caractere)
         case 9:
             matriz[2][2] = caractere;
         break;
+    }
 }
 
 
