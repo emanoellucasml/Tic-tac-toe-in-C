@@ -11,6 +11,14 @@ void loading();
 void realizaJogada(char matriz[3][3], int, char);
 int verificaPosicao(char matriz[3][3], int);
 int linha1(char matriz[3][3]);
+int linha2(char matriz[3][3]);
+int linha3(char matriz[3][3]);
+int coluna1(char matriz[3][3]);
+int coluna2(char matriz[3][3]);
+int coluna3(char matriz[3][3]);
+int diagonalPrimaria(char matriz[3][3]);
+int diagonalSecundaria(char matriz[3][3]);
+int verificaFim(char matriz[3][3]);
 
 int main()
 {
@@ -38,6 +46,8 @@ int main()
             }
         }
         realizaJogada(matriz, posicao, 'X');
+        if(verificaFim(matriz))
+            break;
         system("clear");
         exibe(matriz);
         printf("Em que posição deseja jogar O, %s\n", jogador2);
@@ -49,7 +59,7 @@ int main()
             }
         }
         realizaJogada(matriz, posicao, 'O');
-    }while(fim(matriz) != 1);
+    }while(!verificaFim(matriz));
     return 0;
 }
 
@@ -93,6 +103,26 @@ int coluna3(char matriz[3][3])
     if(matriz[2][0] == matriz[2][1] && matriz[2][0] == matriz[2][2])
         return 1;
     return 0;
+}
+
+int diagonalPrimaria(char matriz[3][3])
+{
+    if(matriz[0][0] == matriz[1][1] && matriz[0][0] == matriz[2][2])
+        return 1;
+    return 0;
+}
+
+int diagonalSecundaria(char matriz[3][3])
+{
+    if(matriz[0][2] == matriz[1][1] && matriz[0][2] == matriz[2][0])
+        return 1;
+    return 0;
+}
+
+int verificaFim(char matriz[3][3])
+{
+    if(linha1(matriz) || linha2(matriz) || linha3(matriz) || coluna1(matriz) || coluna2(matriz) || coluna3(matriz) || diagonalPrimaria(matriz) || diagonalSecundaria(matriz))
+        return 1;
 }
 
 void preenche(char matriz[3][3])
