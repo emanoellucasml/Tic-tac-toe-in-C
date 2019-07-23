@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1563886852 source:/home/emanoellucas/Documentos/Programas/C/Jogo da Velha/main.c
+	<stdio.h>
+	<stdlib.h>
+
