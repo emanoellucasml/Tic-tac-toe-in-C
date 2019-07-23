@@ -20,7 +20,7 @@ int main()
         exibe(matriz);
         printf("Em que posição deseja jogar o X, %s?\n", jogador1);
         scanf("%d", &posicao);
-        if(verificaPosicao(matriz, posicao) != 1){
+        if(verificaPosicao(matriz, posicao) != 1 ){
             while(verificaPosicao(matriz, posicao) != 1){
                 printf("Digite uma posicao valida: ");
                 scanf("%d", &posicao);
