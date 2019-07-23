@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1563902519 source:/home/emanoellucas/Documentos/Programas/C/Jogo da Velha/main.c
+1563902839 source:/home/emanoellucas/Documentos/Programas/C/Jogo da Velha/main.c
 	<stdio.h>
 	<stdlib.h>
 	"jogo.h"
 
-1563902509 source:/home/emanoellucas/Documentos/Programas/C/Jogo da Velha/jogo.c
+1563903092 source:/home/emanoellucas/Documentos/Programas/C/Jogo da Velha/jogo.c
 	"jogo.h"
 	<time.h>
 

@@ -66,9 +66,11 @@ int verificaEmpate(char matriz[3][3])
                 k++;
         }
     }
-    if(k == 9)
+    if(k == 9){
         return 1;
-    return 0;
+    }else{
+        return 0;
+    }
 }
 
 int verificaFim(char matriz[3][3])

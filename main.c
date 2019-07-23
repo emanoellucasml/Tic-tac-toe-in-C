@@ -5,9 +5,9 @@
 int main()
 {
     char matriz[3][3];
+    preenche(matriz);
     char jogador1[30], jogador2[30];
     int posicao;
-    preenche(matriz);
     printf("Nome do jogador 1: ");
     scanf("%s", &jogador1);
     setbuf(stdin, NULL);
@@ -44,5 +44,7 @@ int main()
         }
         realizaJogada(matriz, posicao, 'O');
     }while(!verificaFim(matriz));
+    if(verificaEmpate(matriz))
+        printf("Empate!");
     return 0;
 }
