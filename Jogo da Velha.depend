@@ -1,5 +1,7 @@
 # depslib dependency file v1.0
-1563886852 source:/home/emanoellucas/Documentos/Programas/C/Jogo da Velha/main.c
+1563889563 source:/home/emanoellucas/Documentos/Programas/C/Jogo da Velha/main.c
 	<stdio.h>
 	<stdlib.h>
+	<time.h>
+	<sys/timeb.h>
 
