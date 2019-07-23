@@ -27,7 +27,7 @@ int main()
             }
         }
         realizaJogada(matriz, posicao, 'X');
-        if(verificaFim(matriz)){
+        if(verificaFim(matriz) || verificaEmpate(matriz)){
             system("clear");
             exibe(matriz);
             break;
@@ -36,15 +36,15 @@ int main()
         exibe(matriz);
         printf("Em que posição deseja jogar O, %s?\n", jogador2);
         scanf("%d", &posicao);
-        if(verificaPosicao(matriz, posicao) != 1){
+        if(verificaPosicao(matriz, posicao) != 1 && verificaEmpate(matriz)){
             while(verificaPosicao(matriz, posicao) != 1){
                 printf("Digite uma posicao válida: ");
                 scanf("%d", &posicao);
             }
         }
         realizaJogada(matriz, posicao, 'O');
-    }while(!verificaFim(matriz));
+    }while(!verificaFim(matriz) && !verificaEmpate(matriz));
     if(verificaEmpate(matriz))
-        printf("Empate!");
+        printf("Velha!");
     return 0;
 }
