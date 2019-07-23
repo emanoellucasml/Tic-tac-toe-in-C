@@ -36,7 +36,7 @@ int main()
         exibe(matriz);
         printf("Em que posição deseja jogar O, %s?\n", jogador2);
         scanf("%d", &posicao);
-        if(verificaPosicao(matriz, posicao) != 1 && verificaEmpate(matriz)){
+        if(verificaPosicao(matriz, posicao)){
             while(verificaPosicao(matriz, posicao) != 1){
                 printf("Digite uma posicao válida: ");
                 scanf("%d", &posicao);
