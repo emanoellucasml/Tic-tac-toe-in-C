@@ -4,9 +4,8 @@
 
 int main()
 {
-    char matriz[3][3];
+    char matriz[3][3], jogador1[30], jogador2[30];
     preenche(matriz);
-    char jogador1[30], jogador2[30];
     int posicao;
     printf("Nome do jogador 1: ");
     scanf("%s", &jogador1);
