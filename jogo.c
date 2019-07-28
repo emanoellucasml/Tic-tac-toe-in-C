@@ -240,17 +240,17 @@ void loading2()
 {
     system("clear");
     printf("1%");
-    pause(0.5);
+    pause(1);
     system("clear");
     printf("30%");
-    pause(0.5);
+    pause(1);
     printf("60%");
-    pause(0.5);
+    pause(1);
     system("clear");
     printf("90%");
-    pause(0.5);
+    pause(1);
     printf("100%");
-    pause(0.5);
+    pause(1);
     system("clear");
 }
 
