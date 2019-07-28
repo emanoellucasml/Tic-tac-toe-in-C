@@ -244,12 +244,12 @@ void loading2()
     system("clear");
     printf("30%...");
     pause(1);
-    printf("60...%");
+    printf("60%...");
     pause(1);
     system("clear");
-    printf("90...%");
+    printf("90%...");
     pause(1);
-    printf("10...%");
+    printf("10%...");
     pause(1);
     system("clear");
 }
