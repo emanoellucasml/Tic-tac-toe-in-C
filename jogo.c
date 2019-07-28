@@ -239,6 +239,7 @@ void realizaJogada(char matriz[3][3], int posicao, char caractere)
 void loading2()
 {
     system("clear");
+<<<<<<< HEAD
     printf("1%..");
     pause(1);
     system("clear");
