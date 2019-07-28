@@ -10,6 +10,7 @@
 
 1564024154 /home/emanoellucas/Documentos/Programas/C/Jogo da Velha/jogo.h
 
+<<<<<<< HEAD
 1564024837 source:/home/emanoel/Documentos/Programas/C/Jogo da Velha/jogo.c
 	"jogo.h"
 	<time.h>
@@ -21,3 +22,5 @@
 	<stdlib.h>
 	"jogo.h"
 
+=======
+>>>>>>> 15541afaebd812bd5c78d6b667825605aeb30bd1

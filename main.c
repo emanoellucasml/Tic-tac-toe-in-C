@@ -7,7 +7,11 @@ int main()
     char matriz[3][3], jogador1[30], jogador2[30];
     preenche(matriz);
     int posicao;
+<<<<<<< HEAD
     printf("Nome do jogador 1 : ");
+=======
+    printf("Nome do jogador 1: ");
+>>>>>>> 15541afaebd812bd5c78d6b667825605aeb30bd1
     scanf("%s", &jogador1);
     setbuf(stdin, NULL);
     printf("Nome do jogador 2: ");
