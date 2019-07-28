@@ -249,7 +249,7 @@ void loading2()
     system("clear");
     printf("90%");
     pause(1);
-    printf("100%");
+    printf("10%");
     pause(1);
     system("clear");
 }

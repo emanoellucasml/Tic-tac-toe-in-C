@@ -13,7 +13,7 @@ int main()
     printf("Nome do jogador 2: ");
     scanf("%s", &jogador2);
     setbuf(stdin, NULL);
-    loading();
+    loading2();
     do{
         system("clear");
         exibe(matriz);
