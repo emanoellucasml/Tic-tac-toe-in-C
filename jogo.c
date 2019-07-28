@@ -239,17 +239,17 @@ void realizaJogada(char matriz[3][3], int posicao, char caractere)
 void loading2()
 {
     system("clear");
-    printf("1%");
+    printf("1%...");
     pause(1);
     system("clear");
-    printf("30%");
+    printf("30%....");
     pause(1);
-    printf("60%");
+    printf("60%...");
     pause(1);
     system("clear");
-    printf("90%");
+    printf("90%...");
     pause(1);
-    printf("100%");
+    printf("100%...");
     pause(1);
     system("clear");
 }
