@@ -1,7 +1,7 @@
 #ifndef JOGO_H_INCLUDED
 #define JOGO_H_INCLUDED
 
-void pause(float);
+void pausar(float);
 void exibe(char matriz[][3]);
 void preenche(char matriz[][3]);
 char intToChar(int algarismo);
