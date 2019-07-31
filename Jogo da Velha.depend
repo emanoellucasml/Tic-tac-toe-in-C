@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1563903313 source:/home/emanoellucas/Documentos/Programas/C/Jogo da Velha/main.c
+	<stdio.h>
+	<stdlib.h>
+	"jogo.h"
+
+1564024154 source:/home/emanoellucas/Documentos/Programas/C/Jogo da Velha/jogo.c
+	"jogo.h"
+	<time.h>
+
+1564024154 /home/emanoellucas/Documentos/Programas/C/Jogo da Velha/jogo.h
+
+1564024154 D
+
+1564284680 source:/home/emanoel/Documentos/Programas/C/Jogo da Velha/jogo.c
+	"jogo.h"
+	<time.h>
+
+1564284275 /home/emanoel/Documentos/Programas/C/Jogo da Velha/jogo.h
+
+1564285465 source:/home/emanoel/Documentos/Programas/C/Jogo da Velha/main.c
+	<stdio.h>
+	<stdlib.h>
+	"jogo.h"
+
+1564024837 
+
+1564024837 41afaebd812bd5c78d6b667825605aeb30bd1
+
+1564540752 source:/home/emanoel/juninhoplay/Tic-tac-toe-in-C/jogo.c
+	"jogo.h"
+	<time.h>
+
+1564540714 /home/emanoel/juninhoplay/Tic-tac-toe-in-C/jogo.h
+
+1564540789 source:/home/emanoel/juninhoplay/Tic-tac-toe-in-C/main.c
+	<stdio.h>
+	<stdlib.h>
+	"jogo.h"
+	<unistd.h>
+	<stdlib.h>
+	<windows.h>
+
