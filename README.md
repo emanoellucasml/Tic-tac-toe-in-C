@@ -1,1 +1,1 @@
-A console program that works as a hash game made in C.
+A console program made in C that works as a hash game.
