@@ -11,7 +11,6 @@
 
    #include <windows.h>
 #endif
-
 int main()
 {
     char matriz[3][3], jogador1[30], jogador2[30];
@@ -23,9 +22,9 @@ int main()
     printf("Nome do jogador 2: ");
     scanf("%s", &jogador2);
     setbuf(stdin, NULL);
-    loading2();
+    loading();
     do{
-        system("clear");
+        limpaTela();
         exibe(matriz);
         printf("Em que posição deseja jogar o X, %s?\n", jogador1);
         scanf("%d", &posicao);
@@ -37,11 +36,11 @@ int main()
         }
         realizaJogada(matriz, posicao, 'X');
         if(verificaFim(matriz) || verificaEmpate(matriz)){
-            system("clear");
+            limpaTela();
             exibe(matriz);
             break;
         }
-        system("clear");
+        limpaTela();
         exibe(matriz);
         printf("Em que posição deseja jogar O, %s?\n", jogador2);
         scanf("%d", &posicao);
