@@ -114,23 +114,23 @@ void loading()
 {
     system("clear");
     printf ("Loading.\n");
-    pause (1);
+    pausar (1);
     system("clear");
     printf ("Loading..\n");
-    pause (1);
+    pausar (1);
     system("clear");
     printf("Loading...\n");
-    pause (1);
+    pausar (1);
     system("clear");
     printf ("Loading....\n");
-    pause (1);
+    pausar (1);
     system("clear");
     printf ("Loading.....\n");
-    pause (1);
+    pausar (1);
     system("clear");
 }
 
-void pause(float delay1)
+void pausar(float delay1)
 {
    if(delay1 < 0.001)
     return; // pode ser ajustado e/ou evita-se valores negativos.
@@ -240,17 +240,17 @@ void loading2()
 {
     system("clear");
     printf("1%..");
-    pause(1);
+    pausar(1);
     system("clear");
     printf("30%...");
-    pause(1);
+    pausar(1);
     printf("60%...");
-    pause(1);
+    pausar(1);
     system("clear");
     printf("90%...");
-    pause(1);
+    pausar(1);
     printf("100%...");
-    pause(1);
+    pausargi(1);
     system("clear");
 }
 
