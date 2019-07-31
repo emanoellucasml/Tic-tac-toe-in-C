@@ -1,10 +1,12 @@
 #include "jogo.h"
 #include <time.h>
 
+
 int linha1(char matriz[][3])
 {
-    if(matriz[0][0] == matriz[0][1] && matriz[0][0] == matriz[0][2])
+    if(matriz[0][0] == matriz[0][1] && matriz[0][0] == matriz[0][2]){
         return 1;
+    }
     return 0;
 }
 
