@@ -27,3 +27,14 @@
 
 1564024837 41afaebd812bd5c78d6b667825605aeb30bd1
 
+1564540588 source:/home/emanoel/juninhoplay/Tic-tac-toe-in-C/jogo.c
+	"jogo.h"
+	<time.h>
+
+1564540437 /home/emanoel/juninhoplay/Tic-tac-toe-in-C/jogo.h
+
+1564540533 source:/home/emanoel/juninhoplay/Tic-tac-toe-in-C/main.c
+	<stdio.h>
+	<stdlib.h>
+	"jogo.h"
+
