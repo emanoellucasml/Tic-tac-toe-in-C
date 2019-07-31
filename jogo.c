@@ -114,22 +114,22 @@ char intToChar(int algarismo)
 
 void loading()
 {
-    system("clear");
+    limpar_tela();
     printf ("Loading.\n");
     pausar (1);
-    system("clear");
+   limpar_tela();
     printf ("Loading..\n");
     pausar (1);
-    system("clear");
+    limpar_tela();
     printf("Loading...\n");
     pausar (1);
-    system("clear");
+    limpar_tela();
     printf ("Loading....\n");
     pausar (1);
-    system("clear");
+    limpar_tela();
     printf ("Loading.....\n");
     pausar (1);
-    system("clear");
+    limpar_tela();
 }
 
 void pausar(float delay1)
@@ -240,20 +240,20 @@ void realizaJogada(char matriz[3][3], int posicao, char caractere)
 
 void loading2()
 {
-    system("clear");
+    limpar_tela();
     printf("1%..");
     pausar(1);
-    system("clear");
+    limpar_tela();
     printf("30%...");
     pausar(1);
     printf("60%...");
     pausar(1);
-    system("clear");
+    limpar_tela();
     printf("90%...");
     pausar(1);
     printf("100%...");
-    pausargi(1);
-    system("clear");
+    pausar(1);
+    limpar_tela();
 }
 
 

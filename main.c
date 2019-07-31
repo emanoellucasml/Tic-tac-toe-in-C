@@ -16,7 +16,7 @@ int main()
     setbuf(stdin, NULL);
     loading2();
     do{
-        system("clear");
+        limpar_tela();
         exibe(matriz);
         printf("Em que posição deseja jogar o X, %s?\n", jogador1);
         scanf("%d", &posicao);
@@ -28,11 +28,11 @@ int main()
         }
         realizaJogada(matriz, posicao, 'X');
         if(verificaFim(matriz) || verificaEmpate(matriz)){
-            system("clear");
+            limpar_tela();
             exibe(matriz);
             break;
         }
-        system("clear");
+        limpar_tela();
         exibe(matriz);
         printf("Em que posição deseja jogar O, %s?\n", jogador2);
         scanf("%d", &posicao);
