@@ -1,10 +1,12 @@
 #include "jogo.h"
 #include <time.h>
 
+
 int linha1(char matriz[][3])
 {
-    if(matriz[0][0] == matriz[0][1] && matriz[0][0] == matriz[0][2])
+    if(matriz[0][0] == matriz[0][1] && matriz[0][0] == matriz[0][2]){
         return 1;
+    }
     return 0;
 }
 
@@ -112,25 +114,25 @@ char intToChar(int algarismo)
 
 void loading()
 {
-    system("clear");
+    limpar_tela();
     printf ("Loading.\n");
-    pause (1);
-    system("clear");
+    pausar (1);
+   limpar_tela();
     printf ("Loading..\n");
-    pause (1);
-    system("clear");
+    pausar (1);
+    limpar_tela();
     printf("Loading...\n");
-    pause (1);
-    system("clear");
+    pausar (1);
+    limpar_tela();
     printf ("Loading....\n");
-    pause (1);
-    system("clear");
+    pausar (1);
+    limpar_tela();
     printf ("Loading.....\n");
-    pause (1);
-    system("clear");
+    pausar (1);
+    limpar_tela();
 }
 
-void pause(float delay1)
+void pausar(float delay1)
 {
    if(delay1 < 0.001)
     return; // pode ser ajustado e/ou evita-se valores negativos.
@@ -235,7 +237,3 @@ void realizaJogada(char matriz[3][3], int posicao, char caractere)
         break;
     }
 }
-
-
-
-

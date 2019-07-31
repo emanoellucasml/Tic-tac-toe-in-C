@@ -27,6 +27,7 @@
 
 1564024837 41afaebd812bd5c78d6b667825605aeb30bd1
 
+<<<<<<< HEAD
 1564541468 source:/home/emanoel/Documentos/Programas/C/Tic-tac-toe-in-C/jogo.c
 	"jogo.h"
 	<time.h>
@@ -37,4 +38,16 @@
 	<stdio.h>
 	<stdlib.h>
 	"jogo.h"
+=======
+1564540706 source:c:\users\emanu\desktop\teste\tic-tac-toe-in-c\main.c
+	<stdio.h>
+	<stdlib.h>
+	"jogo.h"
+
+1564540698 c:\users\emanu\desktop\teste\tic-tac-toe-in-c\jogo.h
+
+1564540719 source:c:\users\emanu\desktop\teste\tic-tac-toe-in-c\jogo.c
+	"jogo.h"
+	<time.h>
+>>>>>>> a31cd06975639cb04a82e2fbd3ede1df46e29aa9
 
