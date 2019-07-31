@@ -21,3 +21,12 @@ int verificaFim(char matriz[][3]);
 
 
 #endif // JOGO_H_INCLUDED
+
+
+#if defined(__MINGW32__) || defined(_MSC_VER)
+#define limpar_input() fflush(stdin)
+#define limpar_tela() system("cls")
+#else
+#define limpar_input() __fpurge(stdin)
+#define limpar_tela() system("clear")
+#endif
