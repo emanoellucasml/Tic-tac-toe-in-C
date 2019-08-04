@@ -1,3 +1,7 @@
 <h1>English</h2>
 
-A console program made in C that works as a hash game.
+This is a console application made in C that works as a hash game.
+
+<h1>Portuguese</h1>
+
+Esta é uma aplicação de console que funciona como um jogo da velha.
